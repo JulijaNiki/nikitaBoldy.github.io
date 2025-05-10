@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;900&display=swap"
+        rel="stylesheet">
+    <title>Portfolio AG</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="navigation__logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="header__burger"><span></span></div>
+            <nav class="navigation">
+                <div class="navigation__links">
+                    <p><a href="#landing">home</a></p>
+                    <p><a href="#about">about me</a></p>
+                    <p><a href="#skills">skills</a></p>
+                    <p><a href="#portfolio">portfolio</a></p>
+                    <p><a href="#contacts">contacts</a></p>
+                </div>
+                <div class="navigation__social">
+                    <a target="_blank" href="https://www.facebook.com/agsfinks"> <img src="./img/Icons/facebook.svg"
+                            alt="facebook"></a>
+                    <a target="_blank" href="https://github.com/AleksGoodOmens"> <img src="./img/Icons/github.svg"
+                            alt="github"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/alexgdeveloper"> <img
+                            src="./img/Icons/linkedin.svg" alt="linkedin"></a>
+                    <a target="_blank" href="https://wa.me/447838944800"> <img src="./img/Icons/whatsapp.svg"
+                            alt="whatsapp"></a>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="landing" id="landing">
+                <div class="__wrapper">
+                    <div class="header-area landing__title">
+                        <h2><span class="animate"></span></h2>
+                    </div>
+                    <p class="landing__subtitle">MY NAME IS ALEX GOMENIUK
+                        <br>AND<br> I’M A FRONT-END DEVELOPER
+                    </p>
+                    <div class="landing__button">
+                        <a class="landing__arrow" href="#about">
+                            view more
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="about" id="about">
+                <div class="about__wrapper __wrapper">
+                    <H2 class="title-page">ABOUT ME</H2>
+                    <div class="about__text">
+                        <p>I am passionate about computer technology. This hobby accompanies me all my life and today I
+                            can confidently say that this is exactly what I want to devote my life to.</p>
+                        <p>I am very responsible person as I am quite punctual person andtrustworthy, I always do what I
+                            promise. This is confirmed by my attendance at college, & my overall academic performance.
+                        </p>
+                    </div>
+                    <div class="about_photo">
+                        <img src="./img/IMG_9499.jpg" alt="photo">
+                    </div>
+
+                </div>
+            </section>
+            <section class="skills" id="skills">
+                <div class="__wrapper">
+                    <H2 class="title-page">My skills</H2>
+                    <div class="skills__items">
+                        <div class="skills__item">
+                            <div class="item__skills-image image1"></div>
+                            <h2 class="item__skills-title">HTML</h2>
+                            <p class="item__skills-subtitle">Validated code for site markup</p>
+                        </div>
+                        <div class="skills__item">
+                            <div class="item__skills-image image2"></div>
+                            <h2 class="item__skills-title">CSS</h2>
+                            <p class="item__skills-subtitle">Site style and animation</p>
+                        </div>
+                        <div class="skills__item">
+                            <div class="item__skills-image image3"></div>
+                            <h2 class="item__skills-title">JS</h2>
+                            <p class="item__skills-subtitle">Object event and animation</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="portfolio" id="portfolio">
+                <div class="portfolio__content __wrapper">
+                    <H2 class="title-page">portfolio</H2>
+                    <div class="slider">
+                        <div class="slider__item">
+                            <img src="/img/123.jpg" alt="dogProject">
+                        </div>
+                        <div class="slider__item">
+                            <img src="/img/124.jpg" alt="jobPub">
+                        </div>
+                        <div class="slider__item">
+                            <img src="/img/125.jpg" alt="pc-specialist">
+                        </div>
+                    </div>
+                </div>
+                <script src="./js/jquery.js"></script>
+                <script src="./js/slick.min.js"></script>
+                <script src="./js/js.js"></script>
+            </section>
+            <section class="contacts" id="contacts">
+                <div class="contacts__content __wrapper">
+                    <H2 class="title-page contacts-title">contacts</H2>
+                    <div class="navigation__social contacts_nav">
+                        <a target="_blank" href="https://www.facebook.com/agsfinks"> <img src="./img/Icons/facebook.svg"
+                                alt="facebook"></a>
+                        <a target="_blank" href="https://github.com/AleksGoodOmens"> <img src="./img/Icons/github.svg"
+                                alt="github"></a>
+                        <a target="_blank" href="https://www.linkedin.com/feed/"> <img src="./img/Icons/linkedin.svg"
+                                alt="linkedin"></a>
+                        <a target="_blank" href="https://whatsapp.com/dl/"> <img src="./img/Icons/whatsapp.svg"
+                                alt="whatsapp"></a>
+                    </div>
+
+
+                    <form class="form" action="send.php" method="post">
+                        <input id="username" placeholder="Enter your name" autocomplete="off" type="text"
+                            name="username" class="form__input" required>
+                        <input autocomplete="off" required placeholder="Email" name="email" value="" type="email"
+                            class="form__mail" required>
+                        <textarea autocomplete="off" name="text" class="form__textarea"></textarea>
+                        <button class="button" type="submit"><span class="text-button">submit</span></button>
+                    </form>
+
+
+
+            </section>
+        </main>
+        <footer class="footer"><span>©</span> 2021 - 2024 Alex G Develop </footer>
+    </div>
+</body>
+
+
+</html>
